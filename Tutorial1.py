@@ -37,3 +37,19 @@ print(message[0:5])
 #Note the first index is INCLUSIVE, the output will include this value
 #the second is EXCLUSIVE, it will NOT return this value
 #EG: The range "0:1" will only return slot 0
+#Note that you do not need to include 0 when starting from 0.
+
+#Methods are functions called from objects
+
+#Using .lower() on a string returns that string, all in lowercase
+message = "HeLlO wOrLd"
+print(message.lower())
+
+#using .upper()returns the string in all UPPERCASE
+message = "HeLlO wOrLd"
+print(message.upper())
+
+# the .count method takes an input argument, and counts all occurances of that input in a string.
+message = "aaabbbb"
+print(message.count("b"))
+#Note that .count() can be passed entire strings
