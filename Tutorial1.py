@@ -22,7 +22,7 @@ print(message)
 message = "abcdefg"
 print(len(message))
 
-#Strings are jsut strings of characters, and you can request specific characters using [].
+#Strings are just strings of characters, and you can request specific characters using [].
 message = "abcdefg"
 print(message[0])
 #Keep in mind that the first character is stored at 0, second at 1, ETC.
@@ -31,3 +31,9 @@ print(message[0])
 message = "abcdefg"
 print(message[-1])
 
+#Using : indicates a range (This number to This number),
+message = "Hello World"
+print(message[0:5])
+#Note the first index is INCLUSIVE, the output will include this value
+#the second is EXCLUSIVE, it will NOT return this value
+#EG: The range "0:1" will only return slot 0
