@@ -97,31 +97,64 @@ print(items.index("calculator"))
 #this returns the index of the item you searched for.
 #if there are multipe duplicate items in a list it will only
 # return the index of the firs item it finds that matches.
+# If it can't find the item at all it will return an arror.
 
-#
+# the "in" operator returns a boolean value for if the item is/is not in the list.
+items = ["pencil-case", "calculator", "Book", "Book", "Penguin"]
+print("Penguin" in items)
+#This is useful if you do not know if something is in a list, but do not want it to return an error.
+# if the lsit you're searching for does not exist, it will return an error.
 
+#the "for" loop is used to iterate through things. a very basic example of it would be:
+items = ["pencil-case", "calculator", "Book", "Book", "Penguin"]
+for item in items:
+    print(item)
+#Which will print each item in the list, in order.
+#note that print() returns the item followed by a newline.
+# also note that, in python, the indentation is important.
+# Here it specifies that the code below is a subest of the code above,
+# the "print()" is a part of the for loop.
+# the "item' in this example is a temporary variable for this one edge case.
 
+#The enumerate() function returns the index of the items as
+# the for loop iterates through the list.
+for item in enumerate(items):
+    print(item)
+#Note that it returns the index value, so the first item will be the 0th index, etc.
+# Note that calling Enumerate() on a list directly returns the hardware address of the list.
+#enumerate() can also be passed a starting value.
+for item in enumerate(items, start=1):
+    print(item)
+#Note that this does not affect the index the function reads from,
+# Just the values shown.
 
-#test instance for reversing an array
-array1 = [1, 2, 3]
-array2 = []
+#for item in enumerate(items, start=1):
+#    print(item[1])
+# Wrong, Wrong, WRONG!
 
-array2.append(array1.pop())
-array2.append(array1.pop())
-array2.append(array1.pop())
+#for item in items:
+#    print(str(items.index(item)) + " "+ item)
 
-print(array2)
+# #test instance for reversing an array
+# array1 = [1, 2, 3]
+# array2 = []
 
-#obscure test case for insert.
-numbers1 = [1, 2, 6, 7, 8]
-numbers2 = [3, 4, 5]
-numbers1.insert(2, numbers2[2])
-numbers1.insert(2, numbers2[1])
-numbers1.insert(2, numbers2[0])
+# array2.append(array1.pop())
+# array2.append(array1.pop())
+# array2.append(array1.pop())
 
-print(numbers1)
+# print(array2)
 
-#test for min()
-testList = ["William-Carter", "Alfred", "johnathon", "bill", "Billy"]
-print(min(testList))
-print(sorted(testList))
+# #obscure test case for insert.
+# numbers1 = [1, 2, 6, 7, 8]
+# numbers2 = [3, 4, 5]
+# numbers1.insert(2, numbers2[2])
+# numbers1.insert(2, numbers2[1])
+# numbers1.insert(2, numbers2[0])
+
+# print(numbers1)
+
+# #test for min()
+# testList = ["William-Carter", "Alfred", "johnathon", "bill", "Billy"]
+# print(min(testList))
+# print(sorted(testList))
