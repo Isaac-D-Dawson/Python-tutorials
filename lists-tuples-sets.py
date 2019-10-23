@@ -103,7 +103,7 @@ print(items.index("calculator"))
 items = ["pencil-case", "calculator", "Book", "Book", "Penguin"]
 print("Penguin" in items)
 #This is useful if you do not know if something is in a list, but do not want it to return an error.
-# if the lsit you're searching for does not exist, it will return an error.
+# if the list you're searching for does not exist, it will return an error.
 
 #the "for" loop is used to iterate through things. a very basic example of it would be:
 items = ["pencil-case", "calculator", "Book", "Book", "Penguin"]
@@ -128,9 +128,12 @@ for item in enumerate(items, start=1):
 #Note that this does not affect the index the function reads from,
 # Just the values shown.
 
-#for item in enumerate(items, start=1):
-#    print(item[1])
-# Wrong, Wrong, WRONG!
+
+
+for index, item in enumerate(items, start=1):
+    print(item)
+# Are you satisfied? Are you Happy? I had to cheat to work this out, and even then it took me five combinations to hit the syntax that worked.
+#So tell me. Are. You. Satisfied?
 
 #for item in items:
 #    print(str(items.index(item)) + " "+ item)
