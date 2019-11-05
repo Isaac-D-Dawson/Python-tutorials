@@ -91,6 +91,14 @@ print(id(glados))  # returns the memory id of this variable
 #is effectively compares the IDs. eg:
 # print(carolyn is glados)
 #is the same as
-#print(id(carolyn) ==  is(glados))
+#print(id(carolyn) == print(is(glados))
 # but is easier to type.
 
+#There are other conditionals that evaluate to false.
+# False
+# None
+# 0
+# Any empty sequence, EG:
+#   "", (), [], ETC.
+# Any empty mapping, EG: {}
+#If used, these are all equal to false.
