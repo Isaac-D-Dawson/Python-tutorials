@@ -56,3 +56,6 @@ x = 1
 while x <=10:
     print(x)
     x+=1
+#Prints starting at one, and ending at ten.
+# The bottom line is to add 1 to x. otherwise the loop will never end.
+#Note that Break(covered in conditionals-booleans.py), will also stop a loop.
