@@ -33,3 +33,33 @@ for i in os.listdir("C:/Users/New User/Documents/GitHub/Python-tutorials"):
 # #deletes everything in the filepath.
 # #I AM NOT TESTING THESE OKAY?
 
+# os.rename()
+# # renames files&folders in target directory. takes in the original file name and the new filename.
+
+# print(os.stat("Hi.txt"))
+# #Returns data from a file. accepts .attribute modifiers.
+
+# os.walk()
+# #Returns a tuple of the directory its in, all subdirectories, and all files. traverses a set filepath.
+# #useful for searching directories.
+
+# os.environ()
+# #Returns all envrionment variables.
+
+# os.path.join()
+# #Joins two filespaths seamlessly, without a missing or duplicated /
+
+# os.path.basename()
+# #Returns the base file-name from a path.
+# os.path.dirname()
+# #returns the path, without the base name.
+# os.path.split()
+# # returns the base name and the path seperately.
+# os.pathexists()
+# #Returns True or False depending on whether the path exists or not.
+# os.path.isdir()
+# #returns true if target is a dir.
+# os.path.isfile()
+# #returns true if target is a file.
+# os.path.splitext()
+# #Spits the path and the file the file, and the file extension.
