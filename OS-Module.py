@@ -4,10 +4,10 @@ import os
 #Internal module that haandles python-Operating system interactions.
 
 print(os.getcwd())
-#Gets current directory.
+#Gets current "Working" directory.
 os.chdir("C:/Users/New User/Documents")
 print(os.getcwd())
-#Note that it will not take certian shalshes unless it is apssed in as raw.
+#Note that it will not take certian slashes unless it is passed in as raw.
 os.chdir(r"C:\Users\New User\Documents")
 print(os.getcwd())
 
