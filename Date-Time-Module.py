@@ -66,4 +66,11 @@ print(datetime.datetime.utcnow().astimezone(pytz.timezone("US/Mountain")))  #use
 
 print([x for x in pytz.all_timezones]) #List comprehension tha treturns all the pytz timezones.
 
+#Explanation of this nonsense
+#Print(Define timezone("Continent/timezone")."is the timezone that the following should use("datetime module"."datetime class"."time right now"()))
 print(pytz.timezone('Pacific/Auckland').localize(datetime.datetime.now()))
+#Please, never ever use code like this. Avoid naive timezones wherever possible.
+
+print(datetime.datetime.now())
+print(datetime.datetime.now().isoformat())
+#Returns the current time in ISO format.
