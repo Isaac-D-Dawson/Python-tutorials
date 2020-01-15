@@ -47,7 +47,7 @@
 # oldShopping = shopping.pop()
 # print(oldShopping)
 
-# #the .reverse() method takes a lsit an reverses it
+# #the .reverse() method takes a list an reverses it
 # numbers = [1, 2, 3]
 # numbers.reverse()
 # print(numbers)
