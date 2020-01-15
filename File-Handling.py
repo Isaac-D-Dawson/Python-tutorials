@@ -19,7 +19,7 @@
 with open("TestFile.txt", "r") as myFile:
     #print(myFile.name)         #gets the file name
     #print(myFile.read())       #reads from the file
-    #print(myFile.readline())   #reads only the current line(And cylces to the next)
+    #print(myFile.readline())   #reads only the current line(And cycles to the next)
     #print(myFile.readlines())  #returns all remaining lines as a list
     pass
 
