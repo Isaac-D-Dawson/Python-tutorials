@@ -10,12 +10,12 @@ ef_cache = {}
 def expensive_func(num):
     if num in ef_cache:
         return ef_cache[num]
-    
-    print(f"computing {num}...")
-    time.sleep(1)
-    result = num*num
-    ef_cache[num] = result
-    return result
+    else:
+        print(f"computing {num}...")
+        time.sleep(1)
+        result = num*num
+        ef_cache[num] = result
+        return result
 
 numbers = [4, 10, 10, 4]
 
