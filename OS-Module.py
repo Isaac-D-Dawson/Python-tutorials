@@ -1,7 +1,7 @@
 #OS-module.py   03.12.2019
 
 import os
-#Internal module that haandles python-Operating system interactions.
+#Internal module that handles python-Operating system interactions.
 
 print(os.getcwd())
 #Gets current "Working" directory.
